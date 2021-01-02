@@ -1,0 +1,745 @@
+
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+body {
+	padding: 0px;
+	margin-left: 0vw;
+	margin-top: 0px;
+}
+
+#page-content-container {
+	height: 100vh;
+	width: fit-content;
+	display: flex;
+	background-image: linear-gradient(135deg, #8A2387, #E94057, #F27121);
+	animation: slidePageRight 1s;
+}
+
+/*
+ PAGE-CONTENT-CONTAINER ANIMATIONS
+*/
+
+@keyframes slidePageLeft {
+	from {margin-left: 0vw;}
+	to {margin-left: -90vw;}
+}
+ 
+@keyframes slidePageRight {
+	from {margin-left: -90vw;}
+	to {margin-left: 0vw;}
+}
+
+/************************************************************
+* LANDING CONTAINER STYLES
+************************************************************/
+.gradient-container {
+	height: 100vh;
+	width: 50vw;
+}
+
+.landing-container {
+	display: flex;
+	width: 50vw;
+	background-color: white;
+}
+
+/*
+ DROPDOWN ANIMATION
+*/
+
+@keyframes slideMaskUp {
+	from { top: 0%; }
+	to { top: -25%; }
+}
+
+@keyframes slideMaskDown {
+	from { top: -25%; }
+	to { top: 0%; }
+}
+
+/*
+ DROPDOWN STYLES
+*/
+
+#dropdown-container {
+	width: 20%;
+	height: 100%;
+	align-self: flex-end;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	margin-right: 3%;
+}
+
+#dropdown-icon {
+	width: 2vw;
+	height: 2vw;
+	margin-top: 15%;
+	background-image: url("../img/hamburger-icon.png");
+	background-size: cover;
+	margin-bottom: 10%;
+}
+
+#dropdown-icon:hover {
+	cursor: pointer;
+	background-image: url("../img/hamburger-icon-select.png");
+}
+
+.dropdown-icon-active {
+	background-image: url("../img/hamburger-icon-select.png") !important;
+}
+
+#dropdown-table {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#dropdown-table table {
+	height: 100%;
+	width: 75%;
+	font-family: Roboto;
+	text-align: right;
+}
+
+#dropdown-table table tr td:hover {
+	cursor: pointer;
+}
+
+
+#dropdown-mask {
+	position: relative;
+	width: 100%;
+	height: 25%;
+	background-color: white;
+	top: -25%;
+	z-index: 1;
+}
+
+#home-button:hover {
+	border-left: 5px #8A2387 solid;
+}
+
+#about-button:hover {
+	border-left: 5px #be336d solid;
+}
+
+#course-button:hover {
+	border-left: 5px #E94057 solid;
+}
+
+#project-button:hover {
+	border-left: 5px #ed553f solid;
+}
+
+#contact-button:hover {
+	border-left: 5px #F27121 solid;
+}
+
+.table-marker {
+	width: 10%;
+	height: 100%;
+	background-color: black;
+}
+
+/*
+ TITLE STYLES
+*/
+
+#title-content-container {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 75%;
+	height: 100%;
+	margin-left: 5%;
+}
+
+#title {
+	width: fit-content;
+	height: fit-content;
+	color: black;
+	font-size: 5vw;
+	font-family: Roboto;
+	font-weight: 900;
+}
+
+#title-sub {
+	width: fit-content;
+	height: fit-content;
+	color: black;
+	font-size: 3vw;
+	font-family: Roboto;
+	font-weight: 900;
+}
+
+#title-content {
+	margin-top: 1vh;
+	margin-right: 10%;
+	width: fit-content;
+	height: fit-content;
+	color: black;
+	font-size: 1.4vw;
+	font-family: Roboto;
+	font-weight: 300;
+}
+
+#title-icons {
+	width: 100%;
+	height: 10%;
+	margin-top: 3%;
+	display: flex;
+	align-items: center;
+}
+
+#title-icons p{
+	font-family: Roboto;
+	font-size: 1.5vw;
+	color: black;
+	font-weight: 300;
+	text-decoration: underline black;
+}
+
+#title-icons a {
+	margin-right: 5%;
+}
+
+/************************************************************
+* ROULETTE ANIMATIONS
+************************************************************/
+@keyframes slideToAbout{
+	from {}
+	to {top: 0vh;}
+}
+
+@keyframes slideToCourse{
+	from {}
+	to {top: -100vh;}
+}
+
+@keyframes slideToProject{
+	from {}
+	to {top: -200vh;}
+}
+
+@keyframes slideToContact{
+	from {}
+	to {top: -300vh;}
+}
+
+@keyframes slideToTop {
+	from {}
+	to {top: 100vh;}
+}
+
+/************************************************************
+* ROULETTE STYLES
+************************************************************/
+#roulette-container {
+	position: relative;
+	top: 100vh;
+	height: 200vh;
+	width: 90vw;
+	background-color: green;
+}
+
+.about-container {
+	height: 100vh;
+	width: 90vw;
+	background-color: #be336d;
+}
+
+.course-container{
+	height: 100vh;
+	width: 90vw;
+	background-color: #E94057;
+}
+
+.project-container {
+	height: 100vh;
+	width: 90vw;
+	background-color: #ed553f;
+}
+
+.contact-container{
+	height: 100vh;
+	width: 90vw;
+	background-color: #F27121;
+}
+
+.page-title {
+	width: 95%;
+	height: 15%;
+	color: white;
+	font-size: 7vw;
+	font-family: Roboto;
+	font-weight: 900;
+	padding-left: 3%;
+}
+
+.page-title-2 {
+	width: 95%;
+	height: 15%;
+	color: white;
+	font-size: 3vw;
+	font-family: Roboto;
+	font-weight: 900;
+	padding-left: 3%;
+}
+
+.page-content-container {
+	margin-top: 3%;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+}
+
+.page-content-container-flex {
+	margin-top: 3%;
+	width: 100%;
+	height: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+}
+
+.page-content-container-flex-justify {
+	margin-top: 3%;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+}
+
+.page-content-container ul {
+	width: 45%;
+}
+
+.page-content-container ul li{
+	padding: 5%;
+	font-family: Roboto;
+	font-size: 1.2vw;
+	color: white;
+}
+
+.content-column {
+	height: 100%;
+	width: 45%;
+}
+
+.content-column-double {
+	height: 100%;
+	width: 45%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.column-header {
+	height: 10%;
+	width: 100%;
+	color: white;
+	font-family: Roboto;
+	font-size: 2.75vw;
+	font-weight: 900;
+	text-align: left;
+	border-bottom: 2px white solid;
+	
+	display: flex;
+	align-items: center;
+}
+
+.content-column p {
+	font-family: Roboto;
+	font-size: 1.5vw;
+	color: white;
+	
+}
+
+.small-header {
+	height: 10%;
+	font-family: Roboto;
+	font-size: 2.5vw;
+	font-weight: 900;
+	padding-left: 3%;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.project-box {
+	width: 48%;
+	height: 45%;
+	margin: 1%;
+	outline: 2px white solid;
+	display: flex;
+	
+	background-color: rgba(0,0,0,.15);
+}
+
+.project-left-side {
+	height: 100%;
+	width: 50%;
+}
+
+.project-right-side {
+	height: 100%;
+	width: 50%;
+}
+
+.project-header {
+	width: 100%;
+	height: 20%;
+	color: white;
+	font-size: 1.8vw;
+	font-family: Roboto;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-header a{
+	margin-right: 10%;
+}
+
+.project-body-left {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-body-right {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-body-left  p {
+	color: white;
+	font-family: Roboto;
+	font-size: 1vw;
+	margin: 5%;
+	margin-top: 0%;
+}
+
+.project-thumbnail {
+	width: 100%;
+	height: 100%;
+	outline: 2px white solid;
+}
+
+.tabletop-thumbnail {
+	background-image: url("../img/tabletop-thumbnail.png") !important;
+	background-size: cover;
+}
+
+.mastermind-thumbnail {
+	background-image: url("../img/mastermind-thumbnail.png") !important;
+	background-size: cover;
+}
+
+.consoledraw-thumbnail {
+	background-image: url("../img/consoledraw-thumbnail.png") !important;
+	background-size: cover;
+}
+
+.roadtrip-thumbnail {
+	background-image: url("../img/roadtrip-thumbnail.png") !important;
+	background-size: cover;
+}
+
+.project-icon {
+	width: 3vw;
+	height: 3vw;
+	margin-right: 5%;
+}
+
+
+.external-icon {
+	background-image: url("../img/external-link-icon.png") !important;
+	background-size: cover;
+}
+
+.git-icon {
+	background-image: url("../img/git-icon.png") !important;
+	background-size: cover;
+}
+
+.git-icon-black {
+	background-image: url("../img/git-icon-black.png") !important;
+	background-size: cover;
+}
+
+.linkedin-icon {
+	background-image: url("../img/linkedin-icon.png") !important;
+	background-size: cover;
+}
+
+.resume-icon {
+	background-image: url("../img/resume-icon.png") !important;
+	background-size: cover;
+}
+
+.tool-icon {
+	width: 2vw;
+	height: 2vw;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.html-icon {
+	background-image: url("../img/html-icon.png") !important;
+	background-size: cover;
+}
+.css-icon {
+	background-image: url("../img/css-icon.png") !important;
+	background-size: cover;
+}
+
+.js-icon {
+	background-image: url("../img/js-icon.png") !important;
+	background-size: cover;
+}
+
+.java-icon {
+	background-image: url("../img/java-icon.png") !important;
+	background-size: cover;
+}
+
+.csharp-icon {
+	background-image: url("../img/csharp-icon.png") !important;
+	background-size: cover;
+}
+
+.mobile {
+	display: none;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (orientation: portrait) {
+	
+	
+body > *:not(.mobile) {
+	display: none;
+}
+
+#landing-page-container {
+	display: none !important;
+	height: 0px !important;
+}
+
+.mobile {
+	display: block;
+}
+
+
+#landing-page-container-mobile {
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(135deg, #8A2387, #E94057, #F27121);
+}
+
+#nav-container {
+	position: fixed;
+	width: 100vw;
+	height: 7.5vh;
+	background-color: white;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+
+#nav-container table {
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	
+}
+
+#nav-container table tr td{
+	text-align: center;
+	font-family: Roboto;
+	font-size: 4vw;
+	color: black;
+}
+
+#nav-container table tr td a{
+	width: 100%;
+	height: 100%;
+}
+
+#nav-container table tr td:active{
+	background-color: rgba(0,0,0,.25);
+}
+	
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#title-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#title{
+	color: white;
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 15vw;
+	padding-left: 2vw;
+	margin: 0px;
+}
+
+#title-content {
+	color: white;
+	font-family: Roboto;
+	font-size: 4vw;
+	padding-left: 2%;
+	margin: 0px;
+	margin-bottom: 25vh;
+}
+
+#title-icons {
+	background-color: white;
+	width: 100vw;
+	height: 10vh;
+	padding-left: 5%;
+}
+
+#title-icons p {
+	font-size: 4vw;
+}
+
+.project-icon {
+	width: 8vw;
+	height: 8vw;
+}
+
+footer {
+	position: fixed;
+	top: 88%;
+	left: 0px;
+	z-index: 10;
+}
+
+
+p {
+	margin: 0px;
+}
+
+
+/************************************
+* SLIDE STYLES
+************************************/
+
+html {
+	overflow-y: visible;
+}
+
+#slides {
+	width: 100%;
+	height: fit-content;
+}
+
+.slide {
+	width: 100vw;
+	height: 100vh;
+}
+
+.slide-content {
+	position: relative;
+	top: 7.5vh;
+	min-height: 80%;
+	max-height: fit-content;
+	width: 100%;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+#slide1 {
+	background-color: #be336d;
+}
+
+#slide2 {
+	background-color: #E94057;
+}
+
+#slide3 {
+	height: 205vh;
+	background-color: #ed553f;
+}
+
+.slide-content .page-title {
+	font-size: 15vw;
+	border-bottom: 2px solid white;
+	width: 100%;
+	height: 12.5vh;
+}
+
+
+.content-row {
+	margin: 3vw;
+	margin-right: 5vw;
+	color: white;
+	font-family: Roboto;
+	font-size: 2.75vw;
+}
+
+.row-header {
+	font-size: 6vw;
+	font-family: Roboto;
+	font-weight: 900;
+	color: white;
+}
+
+.slide-content ul li {
+	margin-bottom: 4vw;
+	font-family: Roboto;
+	color: white;
+	font-size: 4vw;
+}
+
+.project-box {
+	width: 95vw;
+	height: 40vh;
+	margin: 2.5vw;
+}
+
+.project-header {
+	font-size: 5vw;
+	text-align: center;
+}
+
+.project-body-left p {
+	font-size: 2.5vw;
+}
+
+.tool-icon {
+	width: 6vw;
+	height: 6vw;
+}
+
+
+}
+
+
+
